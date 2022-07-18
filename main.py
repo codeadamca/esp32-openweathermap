@@ -1,9 +1,21 @@
 # Print all available modules
 # help('modules')
 
+import network
 import socket
 import json
 from time import sleep
+
+# Connect to wifi
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+wifi.connect('<SSID>', '<PASSWORD>')
+
+# Check if wifi is connected
+while not wifi.isconnected():
+    print('connecting...')
+    sleep(0.25)
+    pass
 
 # Define a function that uses socket to make an API call
 def http_get(url):
@@ -28,7 +40,7 @@ def http_get(url):
     s.close()
 
 # Fetch weaher data
-data = http_get('https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=<OPENWEATHERMAP_API_KEY>')
+data = http_get('https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=<API_KEY>')
 
 # Output API response
 print(data)
