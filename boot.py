@@ -1,11 +1,10 @@
 # boot.py -- run on boot-up
 import network
 
-'''
 # Connect to wifi
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
-wifi.connect('SMART', '242http1522www')
+wifi.connect('<SSID>', '<PASSWORD>')
 
 # Check if wifi is connected
 while not wifi.isconnected():
@@ -23,4 +22,3 @@ while not wifi.isconnected():
 # print(wifi.status())
 # print(wifi.isconnected())
 # print(wifi.ifconfig())
-'''
