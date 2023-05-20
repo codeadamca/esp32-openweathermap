@@ -2,9 +2,11 @@
 
 A basic API call to the Open Weather Map using an ESP32 microcontroller.
 
-## Requirements:
+***
 
-* [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
+## Repo Resources
+
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [LMS ESP32](https://antonsmindstorms.com/product/wifi-python-esp32-board-for-mindstorms/) 
 * [Open Weather Map](https://openweathermap.org/api)
 
