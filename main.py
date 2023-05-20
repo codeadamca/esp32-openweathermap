@@ -40,7 +40,7 @@ def http_get(url):
     s.close()
 
 # Fetch weaher data
-data = http_get('https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=<API_KEY>')
+data = http_get('https://api.openweathermap.org/data/2.5/weather?q=Toronto,CA&appid=<OPENWEATHERMAP_API_KEY>')
 
 # Output API response
 print(data)
