@@ -2,6 +2,8 @@
 
 A basic API call to the Open Weather Map using an ESP32 microcontroller.
 
+At this point this code simply makes an API call and outputs a single value from the received JSON. However, this could easily be integrated with some sort of display or lights based on temperature data. 
+
 ***
 
 ## Repo Resources
